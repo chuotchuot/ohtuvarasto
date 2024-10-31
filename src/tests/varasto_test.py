@@ -57,7 +57,7 @@ class TestVarasto(unittest.TestCase):
     	
     def test_lisays_lisaa_pienentaa_vapaata_tilaa_yli_tilavuuden(self):
     	self.varasto.lisaa_varastoon(11)
-    	self.asserAlmostEqual(self.varasto.paljonko_mahtuu(), 0)
+    	self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 0)
     	
     def test_ottaminen_neg(self):
     	self.varasto.ota_varastosta(-1)
@@ -68,8 +68,8 @@ class TestVarasto(unittest.TestCase):
     	return 10
     	
     def test_tulostaminen(self):
-    	v = Varasto(10)
-    	self.assertEqual(str(v))
+    	tulostus = f"saldo = {self.varasto.saldo}, vielä tilaa {self.varasto.paljonko_mahtuu()}"
+    	self.assertEqual(str(self.varasto), tulostus)
     
     	
     	
