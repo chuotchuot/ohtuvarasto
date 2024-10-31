@@ -70,6 +70,3 @@ class TestVarasto(unittest.TestCase):
     def test_tulostaminen(self):
     	tulostus = f"saldo = {self.varasto.saldo}, vielä tilaa {self.varasto.paljonko_mahtuu()}"
     	self.assertEqual(str(self.varasto), tulostus)
-    
-    	
-    	
