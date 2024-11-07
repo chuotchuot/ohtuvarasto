@@ -67,13 +67,6 @@ def main():
     lisataan_mehua_neg(mehua)
     otetaan_olutta(olutta)
     otetaan_mehua_neg(mehua)
-
-    print("hello world")
-    print("hello world")
-    print("hello world")
-    print("hello world")
-    print("hello world")
-    print("hello world")
     
 
 if __name__ == "__main__":
