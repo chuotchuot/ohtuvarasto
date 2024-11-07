@@ -67,7 +67,6 @@ def main():
     lisataan_mehua_neg(mehua)
     otetaan_olutta(olutta)
     otetaan_mehua_neg(mehua)
-    
 
 if __name__ == "__main__":
     main()
